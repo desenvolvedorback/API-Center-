@@ -105,21 +105,13 @@ Segurança: Hash de senhas (bcrypt), verificação de login e permissões
 
 📁 api_center/
 ├── app.py
-├── templates/
 │   ├── site_principal.html
 │   ├── preco.html
 │   ├── painel_funcionario.html
 │   └── login.html
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── imagens/
-├── database/
 │   └── dados.db
-├── utils/
 │   ├── criptografia.py
 │   └── notificacoes.py
-└── docs/
     └── README.md
 
 
