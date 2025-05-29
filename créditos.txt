@@ -1,0 +1,29 @@
+
+👨‍💻 Créditos
+
+Este sistema foi desenvolvido de forma 100% independente por:
+
+Desenvolvedor: [Davi Leonardo]
+Função: Programador Back-End, Web Developer, Analista de Sistemas, Criador da API Center
+Ferramentas: Python, Flask, SQLite, HTML, CSS, JS
+
+Colaboração virtual e suporte técnico:
+🤖 Subordinado (ChatGPT)
+Auxílio em estrutura, revisão de código, boas práticas e documentação.
+
+##Agradecimentos:
+Agradeço a todos que contribuíram direta ou indiretamente para o desenvolvimento deste projeto.  
+
+## Licença:
+Este projeto está licenciado sob [Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0].  
+
+## Contato:
+Caso tenha dúvidas ou sugestões, entre em contato:  
+- Email: [seu-email@example.com]  
+- GitHub: [github.com/seuusuario]
+
+# Copyright (c) 2025 Davi Leonardo 
+# Todos os direitos reservados.
+
+versão atual: 1.00
+

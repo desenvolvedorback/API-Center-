@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Painel do Funcionário - Confirmar Pagamento</title>
+    <style>
+        body { background-color: #121212; color: #00ff99; font-family: Arial; text-align: center; padding-top: 100px; }
+        input, button { padding: 10px; font-size: 16px; margin: 10px; border-radius: 10px; border: none; }
+        button { background-color: #00ff99; color: black; cursor: pointer; }
+        #resposta { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Confirmar Pagamento</h2>
+    <input type="text" id="cpf_email" placeholder="Digite o CPF ou E-mail"><br>
+    <button onclick="confirmar()">Confirmar Pagamento</button>
+    <div id="resposta" style="display:none; padding: 15px; border-radius: 8px; margin-top: 20px;"></div>
+
+<script>
+    async function confirmar() {
+        const cpf_email = document.getElementById('cpf_email').value;
+        const respostaDiv = document.getElementById('resposta');
+
+        const resposta = await fetch('/confirmar_pagamento_funcionario', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ cpf_email })
+        });
+
+        const dados = await resposta.json();
+
+        respostaDiv.style.display = 'block';
+        respostaDiv.innerText = dados.mensagem;
+
+        if (resposta.ok) {
+            respostaDiv.style.backgroundColor = '#00ff99';  // verde sucesso
+            respostaDiv.style.color = 'black';
+        } else {
+            respostaDiv.style.backgroundColor = '#ff4d4d';  // vermelho erro
+            respostaDiv.style.color = 'white';
+        }
+
+        setTimeout(() => {
+            respostaDiv.style.display = 'none';
+        }, 5000); // some depois de 5 segundos
+    }
+</script>
+</body>
+</html>

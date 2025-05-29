@@ -1,0 +1,249 @@
+
+
+📘 Documentação Técnica – API Center (Sistema de Academia)
+
+Índice
+
+1. Visão Geral
+
+
+2. Tecnologias Utilizadas
+
+
+3. Estrutura de Diretórios
+
+
+4. Rotas da API
+
+
+5. Interface Web
+
+
+6. Funcionalidades Principais
+
+
+7. Banco de Dados
+
+
+8. Segurança e Criptografia
+
+
+9. Integrações
+
+
+10. Deploy e Execução
+
+
+
+
+---
+
+📌 Visão Geral
+
+O API Center é um sistema completo para academias, inspirado na estrutura da ABC Evo, mas com maior liberdade e integração. Ele oferece:
+
+Painel administrativo via web
+
+Sistema de planos e pagamentos integrados
+
+Liberação por QR Code, token ou catraca
+
+Integração com WhatsApp e e-mail
+
+API RESTful
+
+Frontend leve, moderno e funcional
+
+
+
+---
+
+⚙️ Tecnologias Utilizadas
+
+Backend: Python (Flask)
+
+Frontend: HTML5, CSS3, JavaScript
+
+Banco de Dados: SQLite
+
+Notificações: Email e WhatsApp (via API de terceiros)
+
+Segurança: Hash de senhas (bcrypt), verificação de login e permissões
+
+
+
+---
+
+🗂 Estrutura de Diretórios
+
+📁 api_center/
+├── app.py
+├── templates/
+│   ├── site_principal.html
+│   ├── preco.html
+│   ├── painel_funcionario.html
+│   └── login.html
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── imagens/
+├── database/
+│   └── dados.db
+├── utils/
+│   ├── criptografia.py
+│   └── notificacoes.py
+└── docs/
+    └── README.md
+
+
+---
+
+🌐 Rotas da API
+
+Rotas Públicas
+
+GET /site – Redireciona para /siteP1
+
+GET /siteP1 – Página principal da academia
+
+GET /recursos – Redireciona para preco.html
+
+POST /pagar – Processa pagamento do plano
+
+GET /status_usuario/<id> – Verifica status de plano de um cliente
+
+
+Rotas Protegidas (Login obrigatório)
+
+GET /painel_funcionario – Painel interno para liberação manual
+
+POST /liberar_plano – Libera plano manualmente
+
+POST /login – Autentica o funcionário
+
+GET /logout – Finaliza sessão
+
+
+
+---
+
+🖥 Interface Web
+
+/siteP1 – Página principal da academia
+
+Contém:
+
+Logo e navbar estilizados (vermelho neon + preto)
+
+Seções: Sobre a academia, Localização, Contato
+
+Galeria com imagens reais da academia
+
+Botão “Pagar Plano” que redireciona para /recursos
+
+
+/recursos → preco.html
+
+Contém os planos disponíveis (mensal, trimestral, anual) com integração a pagamento.
+
+/painel_funcionario
+
+Acesso protegido com login. O funcionário pode:
+
+Consultar status de alunos
+
+Liberar planos manualmente
+
+
+
+---
+
+🔑 Funcionalidades Principais
+
+✔️ Sistema completo de planos
+
+✔️ Envio automático de e-mail e WhatsApp sobre status e vencimento
+
+✔️ Liberação de acesso por token, QR Code ou sistema de catraca
+
+✔️ Criptografia de senhas
+
+✔️ Interface responsiva e leve
+
+
+
+---
+
+🧠 Banco de Dados
+
+Tabelas principais
+
+usuarios (id, nome, email, plano, status, vencimento)
+
+logins (id_funcionario, nome, senha_hash)
+
+pagamentos (id_pagamento, id_usuario, plano, data_pagamento, status)
+
+
+Armazenado em: database/dados.db
+
+
+---
+
+🔐 Segurança e Criptografia
+
+As senhas dos funcionários são criptografadas com bcrypt.
+
+As permissões são controladas por sessão (Flask session).
+
+A API realiza validações antes de qualquer operação sensível.
+
+IP do cliente pode ser logado (opcional).
+
+
+
+---
+
+📡 Integrações
+
+WhatsApp: envio via API externa (Twilio, WppConnect etc.)
+
+Email: envio via SMTP seguro
+
+QR Code/token: Geração dinâmica com base no status do plano
+
+
+
+---
+
+🚀 Deploy e Execução
+
+Requisitos
+
+Python 3.10+
+
+Flask
+
+SQLite
+
+Bibliotecas:
+
+flask
+
+bcrypt
+
+requests
+
+smtplib (built-in)
+
+
+
+Rodar localmente
+
+pip install -r requirements.txt
+python app.py
+
+Acesse:
+
+http://localhost:5000/siteP1
+

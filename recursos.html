@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recursos | 𝙰𝙿𝙸 𝙲𝚎𝚗𝚝𝚎𝚛</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0f;
+      color: #e1e1e6;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header, footer {
+      background-color: #0f0f17;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      color: #a259ff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1s ease;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .card {
+      background-color: #13131a;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 12px #00000066;
+      border-left: 4px solid #00ff88;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .highlight {
+      color: #00ff88;
+      font-weight: bold;
+    }
+
+    a {
+      color: #a259ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #00ff88;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-voltar:hover {
+      background-color: #00cc6e;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span class="highlight">𝙰𝙿𝙸 𝙲𝚎𝚗𝚝𝚎𝚛</span></h1>
+    <p>Plataforma Inteligente de Gestão Acadêmica</p>
+  </header>
+
+  <section>
+    <a href="preco.html" class="btn-voltar">← pagamento</a>
+
+    <div class="card">
+      <h2>Nova Geração da API</h2>
+      <p>
+        A <span class="highlight">API RESTful da API Center</span> foi recriada do zero com <strong>Flask, JWT e SQLite</strong>, preparada para escalar com PostgreSQL ou MySQL. Moderna, segura e altamente integrada.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li><strong>Autenticação JWT:</strong> Tokens seguros para acesso por perfil.</li>
+        <li><strong>Gestão de Alunos:</strong> CRUD completo com controle de status.</li>
+        <li><strong>Pagamentos:</strong> Vínculo de planos e filtro por período.</li>
+        <li><strong>Liberação de Acesso:</strong> Ativação automatizada pós-pagamento.</li>
+        <li><strong>Consulta Pública:</strong> Alunos verificam acesso via endpoint.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Integrações</h2>
+      <ul>
+        <li><strong>Frontend:</strong> React, Vue, Next.js</li>
+        <li><strong>Mobile:</strong> APKs e apps com requisições seguras</li>
+        <li><strong>Painel Admin:</strong> Controle gerencial completo</li>
+        <li><strong>Futuro:</strong> Integração com pagamentos automáticos e IA</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Segurança</h2>
+      <ul>
+        <li><strong>Tokens JWT:</strong> Sessões seguras e autenticadas</li>
+        <li><strong>Permissões granulares:</strong> Acesso controlado por função</li>
+        <li><strong>Validação rigorosa:</strong> Proteção contra ataques comuns</li>
+        <li><strong>HTTPS:</strong> Comunicação criptografada por TLS</li>
+        <li><strong>Auditoria:</strong> Logs e rastreamento de ações</li>
+        <li><strong>Restrição por IP:</strong> Acesso limitado (opcional)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Por que a API Center?</h2>
+      <p>
+        A <span class="highlight">API Center</span> é mais que uma API: é a base segura, escalável e moderna para a evolução digital da sua instituição educacional.
+      </p>
+    </div>
+
+    <a href="site" class="btn-voltar">← Voltar ao Início</a>
+  </section>
+
+  <footer>
+    <p>© 2025 API Center | Segurança e Eficiência Acadêmica</p>
+  </footer>
+
+</body>
+</html>

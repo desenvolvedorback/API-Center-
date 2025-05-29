@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Center </title>
+  <link rel="icon" href="https://files.catbox.moe/4s0qz7.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00ff99, #8000ff);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff99;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #121212, #1f1f1f);
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #00ff99;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .features {
+      background: #111;
+    }
+
+    .features h2 {
+      color: #8000ff;
+      margin-bottom: 40px;
+    }
+
+    .feature-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      width: 280px;
+      transition: 0.3s;
+      border: 2px solid #8000ff;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      border-color: #00ff99;
+    }
+
+    .feature h3 {
+      color: #00ff99;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #0f0f0f;
+    }
+
+    .contact h2 {
+      color: #00ff99;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://files.catbox.moe/4s0qz7.png" alt="Logo NeoNet">
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="login.html">painel administrativo</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Bem-vindo à API 𝙲𝚎𝚗𝚝𝚎𝚛</h1>
+    <p>A revolução da conexão segura e ilimitada começa aqui.</p>
+  </section>
+
+  <section class="features" id="recursos">
+    <h2>Principais Recursos</h2>
+    <div class="feature-box">
+      <div class="feature">
+        <h3>Api RESTful</h3>
+        <p>Conecte-se ao máximo com nossos sistema criptografados de ponta a ponta</p>
+      </div>
+      <div class="feature">
+        <h3>Segurança </h3>
+        <p>A API Center foi projetada com foco em segurança de ponta a ponta, garantindo a proteção dos dados dos alunos, da instituição e de todo o fluxo administrativo. Cada endpoint da API segue rigorosos padrões de autenticação, autorização e criptografia para evitar acessos indevidos e proteger contra ataques comuns na web.</p>
+      </div>
+      <div class="feature">
+        <h3>Nós</h3>
+        <p>A API Center é uma solução moderna e integrada para instituições de ensino que buscam automatizar o controle de acesso de alunos, gerenciamento de pagamentos e supervisão administrativa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Clique abaixo para nos chamar direto no WhatsApp:</p>
+    <a class="whatsapp-btn" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">Chamar no WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 𝙰𝙿𝙸 𝙲𝚎𝚗𝚝𝚎𝚛. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
