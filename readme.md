@@ -235,6 +235,22 @@ QR Code/token: Geração dinâmica com base no status do plano
 
 ---
 
+## 📜 Licença
+
+Este projeto está licenciado sob os termos da **Creative Commons Atribuição - Sem Derivações 4.0 Internacional (CC BY-ND 4.0)**.
+
+Você pode:
+- Compartilhar, copiar e redistribuir o material em qualquer meio ou formato.
+- Usar para fins educacionais e pessoais.
+
+Você **não pode**:
+- Usar o projeto para fins comerciais.
+- Modificar, adaptar ou criar derivados a partir deste projeto.
+
+**Créditos obrigatórios ao autor original.**
+
+Mais informações: [https://creativecommons.org/licenses/by-nd/4.0/deed.pt-br](https://creativecommons.org/licenses/by-nd/4.0/deed.pt-br)
+
 🚀 Deploy e Execução
 
 Requisitos
