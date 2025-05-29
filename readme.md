@@ -1,4 +1,31 @@
+Projeto: API Center – Sistema completo para academias
 
+> Desenvolvi sozinho, em apenas 5 dias, um sistema completo e funcional para academias, inspirado e expandido a partir de modelos comerciais como o da ABC Evo.
+
+Este projeto integra:
+
+API RESTful com mais de 830 linhas de código, desenvolvida em Flask
+
+Interface web profissional com mais de 760 linhas, com templates, rotas públicas e protegidas
+
+Integração com Mercado Pago para cobranças online
+
+Geração de QR Code dinâmico para liberação de acesso
+
+Sistema de login com autenticação via JWT e criptografia com Bcrypt
+
+Notificações automáticas via e-mail e WhatsApp
+
+Agendamentos automáticos com APScheduler
+
+Banco de dados SQLite otimizado
+
+Painel administrativo para funcionários
+
+Site principal com área institucional, pagamento e localização
+
+
+Toda a infraestrutura foi planejada para ser modular, segura e escalável. Este projeto, se encomendado comercialmente, teria custo estimado superior a R$10.000. Foi feito com fins educacionais, demonstrando minha capacidade técnica, organização e produtividade — com foco em resultados reais.
 
 📘 Documentação Técnica – API Center (Sistema de Academia)
 
